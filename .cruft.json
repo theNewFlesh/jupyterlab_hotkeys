@@ -1,0 +1,51 @@
+{
+  "template": "https://github.com/theNewFlesh/cookiecutter-datalus",
+  "commit": "048b9c8f4a94a6d59fc5ca73340774db2fc16d8a",
+  "checkout": null,
+  "skip": [
+    "__init__\\.py$",
+    "\\.gitignore$",
+    "\\.gitkeep$",
+    "docker/config/.*\\.lock$",
+    "docker/config/build\\.yaml",
+    "docs/.*",
+    "mkdocs/md/(?!index\\.md|style\\.css)",
+    "public/.*",
+    "resources/.*",
+    "sphinx/.*rst$"
+  ],
+  "context": {
+    "cookiecutter": {
+      "repo": "jupyterlab_hotkeys",
+      "repo_type": "library",
+      "include_gcc": "no",
+      "include_helm": "no",
+      "include_mkdocs": "no",
+      "include_nvidia": "no",
+      "include_openexr": "no",
+      "include_prod_cli": "no",
+      "include_prod_envs": "yes",
+      "include_rsync": "no",
+      "include_secret_env": "no",
+      "include_vscode_server": "no",
+      "port_prefix": "11",
+      "git_user": "theNewFlesh",
+      "git_host": "github",
+      "git_organization": "theNewFlesh",
+      "docker_registry": "dockerhub",
+      "organization_url": "github.com",
+      "description": "Advanced Hotkeys for Jupyter Lab.",
+      "author": "Alex Braun",
+      "email": "alexander.g.braun@gmail.com",
+      "website": "http://www.alexgbraun.com",
+      "volume": "",
+      "keywords": "jupyter, jupyter-lab, hotkeys",
+      "year": "2025",
+      "python_min_version": "10",
+      "python_max_version": "13",
+      "initial_repo_version": "0.0.1",
+      "_template": "https://github.com/theNewFlesh/cookiecutter-datalus"
+    }
+  },
+  "directory": null
+}

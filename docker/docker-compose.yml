@@ -1,0 +1,21 @@
+services:
+  jupyterlab_hotkeys:
+    container_name: jupyterlab_hotkeys
+    image: jupyterlab_hotkeys:dev
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: dev.dockerfile
+    ports:
+      - "1100:9000"
+      - "1180:8080"
+    userns_mode: "host"
+    user: ubuntu
+    env_file:
+      - config/dev-env
+    volumes:
+      - ../:/home/ubuntu/jupyterlab_hotkeys
+      - ~/.ssh:/home/ubuntu/.ssh:ro
+      - ./config/jupyter:/home/ubuntu/.jupyter
+      - ./config/zshrc:/home/ubuntu/.zshrc
+    working_dir: "/home/ubuntu"
