@@ -23,8 +23,7 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Typing :: Typed",
 ]
-requires-python = ">=3.13"
-dependencies = []
+dynamic = ["version", "description", "authors", "urls", "keywords"]
 
 [project.urls]
 repository = "https://github.com/theNewFlesh/jupyterlab_hotkeys"
@@ -168,12 +167,16 @@ exclude = [
 "jupyterlab_hotkeys/labextension" = "share/jupyter/labextensions/jupyterlab_hotkeys"
 "install.json" = "share/jupyter/labextensions/jupyterlab_hotkeys/install.json"
 
+[tool.hatch.build.hooks.version]
+path = "jupyterlab_hotkeys/_version.py"
+
 [tool.hatch.build.hooks.jupyter-builder]
 dependencies = [
     "hatch-jupyter-builder>=0.5",
 ]
 build-function = "hatch_jupyter_builder.npm_builder"
 ensured-targets = [
+    "jupyterlab_hotkeys/labextension/static/style.js",
     "jupyterlab_hotkeys/labextension/package.json",
 ]
 skip-if-exists = [
