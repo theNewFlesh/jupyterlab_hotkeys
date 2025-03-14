@@ -1,7 +1,7 @@
 [project]
 name = "jupyterlab_hotkeys"
 version = "0.0.1"
-description = "Henanigans theme for Jupyter Lab."
+description = "Advanced Hotkeys for Jupyter Lab."
 authors = [
     { name = "Alex Braun", email = "alexander.g.braun@gmail.com" },
 ]

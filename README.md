@@ -35,7 +35,7 @@
 
 # Introduction
 
-Henanigans theme for Jupyter Lab.
+Advanced Hotkeys for Jupyter Lab.
 
 <img src='resources/screenshot.png' width='800px'>
 
