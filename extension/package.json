@@ -1,15 +1,15 @@
 {
     "name": "jupyterlab_hotkeys",
-    "version": "0.0.1",
-    "description": "A dark, easy-on-the-eyes theme for JupyterLab.",
+    "version": "0.1.0",
+    "description": "Advanced Hotkeys for Jupyter Lab.",
     "keywords": [
         "jupyter",
         "jupyterlab",
         "jupyterlab-extension"
     ],
-    "homepage": "https://github.com/theNewFlesh/jupyterlab_hotkeys",
+    "homepage": "https://github.com/theNewFlesh/jupyterlab_hotkeys.git",
     "bugs": {
-        "url": "https://github.com/theNewFlesh/jupyterlab_hotkeys/issues"
+        "url": "https://github.com/theNewFlesh/jupyterlab_hotkeys.git/issues"
     },
     "license": "MIT",
     "author": {
@@ -19,13 +19,15 @@
     "files": [
         "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
         "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
-        "src/**/*.{ts,tsx}"
+        "src/**/*.{ts,tsx}",
+        "schema/*.json"
     ],
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
+    "style": "style/index.css",
     "repository": {
         "type": "git",
-        "url": "https://github.com/theNewFlesh/jupyterlab_hotkeys.git"
+        "url": "https://github.com/theNewFlesh/jupyterlab_hotkeys.git.git"
     },
     "scripts": {
         "build": "jlpm build:lib && jlpm build:labextension:dev",
@@ -37,6 +39,7 @@
         "clean": "jlpm clean:lib",
         "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
         "clean:lintcache": "rimraf .eslintcache .stylelintcache",
+        "clean:labextension": "rimraf jupyterlab_hotkeys/labextension jupyterlab_hotkeys/_version.py",
         "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
         "eslint": "jlpm eslint:check --fix",
         "eslint:check": "eslint . --cache --ext .ts,.tsx",
@@ -54,7 +57,7 @@
     },
     "dependencies": {
         "@jupyterlab/application": "^4.0.0",
-        "@jupyterlab/apputils": "^4.0.0"
+        "@jupyterlab/settingregistry": "^4.0.0"
     },
     "devDependencies": {
         "@jupyterlab/builder": "^4.0.0",
@@ -67,7 +70,7 @@
         "eslint": "^8.36.0",
         "eslint-config-prettier": "^8.8.0",
         "eslint-plugin-prettier": "^5.0.0",
-        "npm-run-all": "^4.1.5",
+        "npm-run-all2": "^7.0.1",
         "prettier": "^3.0.0",
         "rimraf": "^5.0.1",
         "source-map-loader": "^1.0.2",
@@ -91,7 +94,7 @@
     "jupyterlab": {
         "extension": true,
         "outputDir": "jupyterlab_hotkeys/labextension",
-        "themePath": "style/index.css"
+        "schemaDir": "schema"
     },
     "eslintIgnore": [
         "node_modules",
@@ -181,9 +184,7 @@
             "property-no-vendor-prefix": null,
             "selector-class-pattern": "^([a-z][A-z\\d]*)(-[A-z\\d]+)*$",
             "selector-no-vendor-prefix": null,
-            "value-no-vendor-prefix": null,
-            "alpha-value-notation": null,
-            "color-function-notation": null
+            "value-no-vendor-prefix": null
         }
     }
 }

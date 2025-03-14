@@ -1,7 +1,8 @@
 # jupyterlab_hotkeys
 
-[![Github Actions Status](https://github.com/theNewFlesh/jupyterlab_hotkeys/workflows/Build/badge.svg)](https://github.com/theNewFlesh/jupyterlab_hotkeys/actions/workflows/build.yml)
-A JupyterLab extension.
+[![Github Actions Status](https://github.com/theNewFlesh/jupyterlab_hotkeys.git/workflows/Build/badge.svg)](https://github.com/theNewFlesh/jupyterlab_hotkeys.git/actions/workflows/build.yml)
+
+Advanced Hotkeys for Jupyter Lab.
 
 ## Requirements
 
@@ -69,7 +70,7 @@ pip uninstall jupyterlab_hotkeys
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named jupyterlab_hotkeys` within that folder.
+folder is located. Then you can remove the symlink named `jupyterlab_hotkeys` within that folder.
 
 ### Packaging the extension
 
