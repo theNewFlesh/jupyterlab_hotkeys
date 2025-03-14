@@ -76,6 +76,7 @@ dev = [
     "pip>=24.0",
     "pydantic<2.0.0",
     "rolling-pin>=0.9.5",
+    "setuptools>=76.0.0",
     "sphinx-autodoc-typehints>=1.22",
     "sphinx-rtd-theme>=2.0.0,<3.0.0",
     "sphinx>=5.3.0",
@@ -165,9 +166,6 @@ exclude = [
 [tool.hatch.build.targets.wheel.shared-data]
 "jupyterlab_hotkeys/labextension" = "share/jupyter/labextensions/jupyterlab_hotkeys"
 "install.json" = "share/jupyter/labextensions/jupyterlab_hotkeys/install.json"
-
-[tool.hatch.build.hooks.version]
-path = "jupyterlab_hotkeys/_version.py"
 
 [tool.hatch.build.hooks.jupyter-builder]
 dependencies = [
