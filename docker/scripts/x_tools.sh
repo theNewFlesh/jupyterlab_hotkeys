@@ -171,7 +171,7 @@ _x_env_create () {
     # args: mode, python_version
     cd $PDM_DIR;
     _x_gen_pdm_files $1 $2;
-    pdm venv create -n $1-$2;
+    pdm venv create -n $1-$2 --with-pip;
 }
 
 x_env_activate () {
