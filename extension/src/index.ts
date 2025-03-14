@@ -34,7 +34,7 @@ class JupyterLabHotkeys {
         }
 
         // Vertical up selection
-        commands.addCommand('hotkeys:add-cursor-to-prev-line', {
+        commands.addCommand('jupyterlab_hotkeys:add-cursor-to-prev-line', {
                 execute: () => {
                     editorExec('addCursorToPrevLine');
                 },
@@ -42,13 +42,13 @@ class JupyterLabHotkeys {
             }
         );
         commands.addKeyBinding({
-            command: 'hotkeys:add-cursor-to-prev-line',
+            command: 'jupyterlab_hotkeys:add-cursor-to-prev-line',
             keys: ['Ctrl ArrowUp'],
             selector: '.CodeMirror-focused'
         });
 
         // Vertical down selection
-        commands.addCommand('hotkeys:add-cursor-to-next-line', {
+        commands.addCommand('jupyterlab_hotkeys:add-cursor-to-next-line', {
             execute: () => {
                 editorExec('addCursorToNextLine');
             },
@@ -57,7 +57,7 @@ class JupyterLabHotkeys {
         );
 
         commands.addKeyBinding({
-            command: 'hotkeys:add-cursor-to-next-line',
+            command: 'jupyterlab_hotkeys:add-cursor-to-next-line',
             keys: ['Ctrl ArrowDown'],
             selector: '.CodeMirror-focused'
         });
