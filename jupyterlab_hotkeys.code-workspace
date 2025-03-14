@@ -512,7 +512,7 @@
             },
             {
                 "label": "[jupyter] build",
-                "detail": "Install npm packages",
+                "detail": "Build jupter lab",
                 "icon": {"id": "zap", "color": "terminal.ansiYellow"},
                 "command": [
                     "source $X_TOOLS_PATH &&",
@@ -529,12 +529,39 @@
                 ]
             },
             {
+                "label": "[jupyter] unlink",
+                "detail": "unLink local extension",
+                "icon": {"id": "zap", "color": "terminal.ansiYellow"},
+                "command": [
+                    "source $X_TOOLS_PATH &&",
+                    "x_jupyter_unlink"
+                ]
+            },
+            {
                 "label": "[jupyter] install",
-                "detail": "Build jupter lab",
+                "detail": "Install npm packages",
                 "icon": {"id": "zap", "color": "terminal.ansiYellow"},
                 "command": [
                     "source $X_TOOLS_PATH &&",
                     "x_jupyter_install"
+                ]
+            },
+            {
+                "label": "[jupyter] develop",
+                "detail": "Jupyter labextension develop",
+                "icon": {"id": "zap", "color": "terminal.ansiYellow"},
+                "command": [
+                    "source $X_TOOLS_PATH &&",
+                    "x_jupyter_develop"
+                ]
+            },
+            {
+                "label": "[jupyter] list",
+                "detail": "Jupyter labextension list",
+                "icon": {"id": "zap", "color": "terminal.ansiYellow"},
+                "command": [
+                    "source $X_TOOLS_PATH &&",
+                    "x_jupyter_list"
                 ]
             }
         ],
