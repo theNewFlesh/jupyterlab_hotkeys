@@ -818,15 +818,14 @@ x_jupyter_install () {
     echo "${CYAN2}JLPM INSTALL${CLEAR}\n";
     x_env_activate_dev;
     cd $EXTENSION_DIR;
-    jlpm install;
+    pip install -ve .;
 }
 
 x_jupyter_develop () {
     # Jupyter labextension develop
     echo "${CYAN2}JUPYTER LABEXTENSION DEVELOP${CLEAR}\n";
     x_env_activate_dev;
-    cd $EXTENSION_DIR;
-    jupyter labextension develop --overwrite .;
+    jupyter labextension develop --overwrite $EXTENSION_DIR;
 }
 
 x_jupyter_list () {
