@@ -7,13 +7,12 @@ data_format: string
 file_extension: ''
 has_binder: false
 has_settings: false
-kind: theme
+kind: frontend
 labextension_name: jupyterlab_hotkeys
 mimetype: ''
 mimetype_name: ''
-project_short_description: A dark JupyterLab theme.
+project_short_description: Advanced Hotkeys for Jupyter Lab.
 python_name: jupyterlab_hotkeys
 repository: https://github.com/theNewFlesh/jupyterlab_hotkeys
 test: false
 viewer_name: ''
-

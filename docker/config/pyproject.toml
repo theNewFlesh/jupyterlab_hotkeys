@@ -10,7 +10,7 @@ license = "MIT"
 keywords = [
     "jupyter",
     "jupyter-lab",
-    "theme",
+    "hotkeys",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
