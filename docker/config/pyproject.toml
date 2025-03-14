@@ -62,7 +62,9 @@ warn_unused_ignores = true
 distribution = true
 
 [tool.pdm.dev-dependencies]
-lab = []
+lab = [
+    "jupyterlab-henanigans>=0.4.2",
+]
 dev = [
     "build",
     "copier~=7.2",
