@@ -23,7 +23,6 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Typing :: Typed",
 ]
-dynamic = ["version", "description", "authors", "urls", "keywords"]
 
 [project.urls]
 repository = "https://github.com/theNewFlesh/jupyterlab_hotkeys"
