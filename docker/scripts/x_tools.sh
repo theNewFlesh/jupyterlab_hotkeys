@@ -806,10 +806,32 @@ x_jupyter_link () {
     jupyter labextension link $EXTENSION_DIR;
 }
 
+x_jupyter_unlink () {
+    # unLink local extension
+    echo "${CYAN2}JUPYTER LABEXTENSION UNLINK${CLEAR}\n";
+    x_env_activate_dev;
+    jupyter labextension unlink $REPO;
+}
+
 x_jupyter_install () {
     # Install npm packages
     echo "${CYAN2}JLPM INSTALL${CLEAR}\n";
     x_env_activate_dev;
     cd $EXTENSION_DIR;
     jlpm install;
+}
+
+x_jupyter_develop () {
+    # Jupyter labextension develop
+    echo "${CYAN2}JUPYTER LABEXTENSION DEVELOP${CLEAR}\n";
+    x_env_activate_dev;
+    cd $EXTENSION_DIR;
+    jupyter labextension develop --overwrite .;
+}
+
+x_jupyter_list () {
+    # Jupyter labextension list
+    echo "${CYAN2}JUPYTER LABEXTENSION LIST${CLEAR}\n";
+    x_env_activate_dev;
+    jupyter labextension list;
 }
