@@ -40,16 +40,16 @@
             "keys": ["Alt T"],
             "selector": "body"
         },
-        // {
-        //     "command": "hotkeys:add-cursor-to-prev-line",
-        //     "keys": ["Alt ArrowUp"],
-        //     "selector": "body"
-        // },
-        // {
-        //     "command": "hotkeys:add-cursor-to-next-line",
-        //     "keys": ["Alt ArrowDown"],
-        //     "selector": "body"
-        // },
+        {
+            "command": "hotkeys:add-cursor-to-prev-line",
+            "keys": ["Alt ArrowUp"],
+            "selector": "body"
+        },
+        {
+            "command": "hotkeys:add-cursor-to-next-line",
+            "keys": ["Alt ArrowDown"],
+            "selector": "body"
+        },
         {
             "command": "documentsearch:start",
             "keys": ["Accel F"],
